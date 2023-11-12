@@ -1,6 +1,9 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import './scanlines.scss'
+import Image from 'next/image'
+import monitor from './monitor-border.webp'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +19,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+      <body className={inter.className}>
+        <Image
+          src={monitor}
+          alt=""
+          fill={true}
+          style={{
+            zIndex: 20,
+            pointerEvents: 'none'
+          }}
+        />
+        <div className='scanlines'>
+          {children}
+        </div>
+      </body>
+    </html >
   )
 }
