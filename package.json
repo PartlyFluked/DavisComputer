@@ -3,19 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "tinacms dev -c \"next dev\"",
-    "build": "tinacms build && next build",
-    "start": "tinacms build && next start",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "@tinacms/cli": "^1.5.31",
     "next": "14.0.2",
     "node-latex": "^3.1.0",
     "react": "^18",
     "react-dom": "^18",
-    "react-pdf": "^7.5.1",
-    "tinacms": "^1.5.22"
+    "react-pdf": "^7.5.1"
   },
   "devDependencies": {
     "@types/node": "^20",
