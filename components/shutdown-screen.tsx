@@ -10,7 +10,8 @@ export default function ShutdownScreen() {
             justifyContent: 'center',
             alignItems: 'center',
             width: '100dvw',
-            height: '100dvh'
+            height: '100dvh',
+            backgroundColor: 'black'
         }}>
             <Image
                 src={shutdown}
