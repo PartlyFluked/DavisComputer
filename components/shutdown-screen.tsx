@@ -1,6 +1,6 @@
 'use client'
 
-import Image from 'next/image'
+import Image from './Image'
 import shutdown from './safe-to-shutdown.png'
 
 export default function ShutdownScreen() {

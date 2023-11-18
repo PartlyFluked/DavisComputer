@@ -7,6 +7,10 @@ const nextConfig = {
         includePaths: [path.join(__dirname, 'app')],
     },
     output: 'export',
+    images: {
+        loader: "custom",
+        unoptimized: true,
+    },
 }
 
 module.exports = nextConfig

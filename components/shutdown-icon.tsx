@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { usePathname, useRouter } from 'next/navigation'
 
-import Image from 'next/image'
+import Image from './Image'
 import shutdown_icon_up from './shutdown-icon-up.png'
 import shutdown_icon_down from './shutdown-icon-down.png'
 import shutdown_icon_click from './shutdown-icon-click.png'

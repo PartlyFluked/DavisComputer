@@ -1,6 +1,6 @@
 'use client'
 
-import Image from 'next/image'
+import Image from './Image'
 import monitor from './monitor-border.webp'
 
 export default function MonitorForeground() {
