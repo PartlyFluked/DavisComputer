@@ -11,10 +11,11 @@ const nextConfig = {
         loader: "custom",
         unoptimized: true,
     },
-    // webpack: (config, options) => {
-    //     // config.optimization.minimize = false;
-    //     return config
-    // },
+    webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
+        config.resolve.alias.canvas = false
+        config.resolve.alias.encoding = false
+        return config
+    }
 }
 
 module.exports = nextConfig

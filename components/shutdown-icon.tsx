@@ -39,10 +39,10 @@ export default function ShutdownIcon() {
     return pathname === '/shutdown' ? (<></>) : (
         <div style={{
             position: 'absolute',
-            width: '6vh',
-            height: '6vh',
-            marginLeft: '2vw',
-            marginTop: isClicked ? '93.2vh' : '93vh'
+            width: '6dvh',
+            height: '6dvh',
+            marginLeft: '2dvw',
+            marginTop: isClicked ? '93.2dvh' : '93dvh'
         }}>
             <Image
                 src={isClicked ? shutdown_icon_click : (isHovered ? shutdown_icon_down : shutdown_icon_up)}
@@ -53,6 +53,9 @@ export default function ShutdownIcon() {
                 onMouseDown={handleMouseDown}
                 onMouseUp={handleMouseUp}
                 onDragStart={preventDragHandler}
+                style={{
+                    zIndex: 10
+                }}
             />
         </div>
     )

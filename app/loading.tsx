@@ -3,7 +3,7 @@
 import { NextPage } from "next";
 
 const LoadingPage: NextPage = () => {
-    return <div>Loading...</div>;
+    return <div>...</div>;
 };
 
 export default LoadingPage;

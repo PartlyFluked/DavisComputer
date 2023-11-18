@@ -12,7 +12,7 @@ export default function MonitorForeground() {
                 fill={true}
                 style={{
                     zIndex: 20,
-                    pointerEvents: 'none'
+                    pointerEvents: 'none',
                 }}
             />
         </div>

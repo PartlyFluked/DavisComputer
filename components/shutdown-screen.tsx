@@ -9,8 +9,8 @@ export default function ShutdownScreen() {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            width: '100vw',
-            height: '100vh'
+            width: '100dvw',
+            height: '100dvh'
         }}>
             <Image
                 src={shutdown}
