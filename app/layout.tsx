@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import './scanlines.scss'
-import Image from 'next/image'
-import monitor from './monitor-border.webp'
-import ShutdownIcon from './shutdown-icon'
+import ShutdownIcon from '@/components/shutdown-icon'
+import MonitorForeground from '@/components/monitor-foreground'
+import TransitionLayout from '@/components/transition-layout'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,18 +21,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Image
-          src={monitor}
-          alt=""
-          fill={true}
-          style={{
-            zIndex: 20,
-            pointerEvents: 'none'
-          }}
-        />
-        <div className='scanlines' style={{ position: 'absolute', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end' }}>
-          <ShutdownIcon />
-          {children}
+        <MonitorForeground />
+        <div className='scanlines'>
+          <TransitionLayout>
+            <ShutdownIcon />
+            {children}
+          </TransitionLayout>
         </div>
       </body>
     </html >

@@ -15,12 +15,20 @@ export default function ShutdownIcon() {
     const [isHovered, setIsHovered] = useState(false);
     const [isClicked, setIsClicked] = useState(false);
 
-    const handleHover = () => {
-        setIsHovered(!isHovered);
+    const handleMouseEnter = () => {
+        setIsHovered(true);
     };
 
-    const handleClick = () => {
-        setIsClicked(!isClicked);
+    const handleMouseLeave = () => {
+        setIsHovered(false);
+    };
+
+    const handleMouseDown = () => {
+        setIsClicked(true);
+    };
+
+    const handleMouseUp = () => {
+        setIsClicked(false);
         router.push('/shutdown', { scroll: false })
     };
 
@@ -34,16 +42,16 @@ export default function ShutdownIcon() {
             width: '6vh',
             height: '6vh',
             marginLeft: '2vw',
-            marginBottom: isClicked ? '1.8vh' : '2vh'
+            marginTop: isClicked ? '93.2vh' : '93vh'
         }}>
             <Image
                 src={isClicked ? shutdown_icon_click : (isHovered ? shutdown_icon_down : shutdown_icon_up)}
                 alt=""
                 fill={true}
-                onMouseEnter={handleHover}
-                onMouseLeave={handleHover}
-                onMouseDown={handleClick}
-                onMouseUp={handleClick}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+                onMouseDown={handleMouseDown}
+                onMouseUp={handleMouseUp}
                 onDragStart={preventDragHandler}
             />
         </div>
