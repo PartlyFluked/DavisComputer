@@ -20,6 +20,7 @@
 \usepackage{graphicx}       % for pictures
 \usepackage{microtype}      % for microtypography stuff
 \usepackage{xcolor}         % for colours
+\usepackage{hyperref}       % clickable links
 
 
 % margin and column widths
@@ -248,12 +249,12 @@
 
     % website
     \cvpersonalinfolinewithicon{height=5mm}{website-icon.png}{
-        luke.davis.computer
+        \href{https://luke.davis.computer}{luke.davis.computer}
     }
 
     % email address
     \cvpersonalinfolinewithicon{height=5mm}{070-envelop.pdf}{
-        luke@davis.computer
+        \href{mailto:luke@davis.computer}{luke@davis.computer}
     }
 }{
     % name
@@ -262,12 +263,12 @@
 
     % LinkedIn account
     \cvpersonalinfolinewithicon{height=5mm}{458-linkedin.pdf}{
-        linkedin.com/in/PartlyFluked
+        \href{https://linkedin.com/in/PartlyFluked}{linkedin.com/in/PartlyFluked}
     }
     
     % address
     \cvpersonalinfolinewithicon{height=5mm}{GitHub-Mark-32px.png}{
-        github.com/PartlyFluked
+        \href{https://github.com/PartlyFluked}{github.com/PartlyFluked}
     }
 }
 
@@ -353,25 +354,25 @@
 \cvitem{
     \cvheadingstyle{Programming Lanugages}
 }{
-    Python, Javascript, C++, SQL, Bash, Ruby, Solidity, Kotlin, Java, HTML.
+    Python, Javascript, C++/C, SQL, Bash, Ruby, Solidity, Kotlin, Java, HTML.
 }
 
 \cvitem{
     \cvheadingstyle{Frameworks and Libraries}
 }{
-    Pytorch (with Ray Tune, DeepSpeed, and ZeRO), Node.js, Redis, Flask, FastAPI, Vue.js, Slurm, Ruby on Rails, WinAPI.
+    Pytorch, Node.js, Redis, Gstreamer, Flask, FastAPI, Vue.js, Slurm, HTCondor, Ruby on Rails, WinAPI.
 }
 
 \cvitem{
     \cvheadingstyle{Developer Tools}
 }{
-    Linux, git, Docker, Kubernetes, Jupyter, VSCode, geth, Jenkins, Systemd, WSL.
+    Linux, git, Docker/Apptainer, Kubernetes, Jupyter, VSCode, geth, GitlabCI/Jenkins, Systemd, WSL.
 }
 
 \cvitem{
     \cvheadingstyle{Productivity Tools}
 }{
-    Microsoft Office, Google Drive Applications, \LaTeX.
+    Microsoft 365, Google Workspace, \LaTeX.
 }
 
 \cvitem{
