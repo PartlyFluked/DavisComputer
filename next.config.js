@@ -11,6 +11,10 @@ const nextConfig = {
         loader: "custom",
         unoptimized: true,
     },
+    // webpack: (config, options) => {
+    //     // config.optimization.minimize = false;
+    //     return config
+    // },
 }
 
 module.exports = nextConfig
