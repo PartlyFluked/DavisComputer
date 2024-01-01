@@ -11,7 +11,7 @@ import "react-pdf/dist/esm/Page/TextLayer.css";
 export default function Home() {
   return (
     <div style={{ backgroundColor: 'lightgray', height: '100dvh', width: '100dvw' }}>
-      <div style={{ position: 'absolute', left: '50dvw', top: '50dvh', transform: 'translate(-50%, -50%)' }}>
+      <div style={{ position: 'absolute', left: '50dvw', top: '50dvh', transform: 'translate(-50%, -50%)', cursor: 'pointer' }} onClick={() => location.href = '/CV.pdf'}>
         <Document file='/CV.pdf' loading='loading...'>
           <Page pageNumber={1} />
         </Document>
