@@ -5,7 +5,7 @@
 % * doesn't use colours, different font weights are used instead for styling;
 % * because the CV fits on one page, header and footer is empty, since there isn't much useful info to put there;
 % * includes a photo.
-\documentclass[a4paper,10pt]{article}
+\documentclass[a4paper,9pt]{article}
 
 
 % package imports
@@ -35,7 +35,7 @@
 
 % left column width
 \newlength{\cvleftcolumnwidth}
-\setlength{\cvleftcolumnwidth}{41.5mm}
+\setlength{\cvleftcolumnwidth}{44.5mm}
 
 % right column width
 \newlength{\cvrightcolumnwidth}
@@ -247,9 +247,9 @@
     %     +61 466 562 858
     % }
 
-    % website
-    \cvpersonalinfolinewithicon{height=5mm}{website-icon.png}{
-        \href{https://luke.davis.computer}{luke.davis.computer}
+    % git
+    \cvpersonalinfolinewithicon{height=5mm}{GitHub-Mark-32px.png}{
+        \href{https://git.ligo.org/luke.davis}{git.ligo.org/luke.davis}
     }
 
     % email address
@@ -265,10 +265,10 @@
     \cvpersonalinfolinewithicon{height=5mm}{458-linkedin.pdf}{
         \href{https://linkedin.com/in/PartlyFluked}{linkedin.com/in/PartlyFluked}
     }
-    
-    % address
-    \cvpersonalinfolinewithicon{height=5mm}{GitHub-Mark-32px.png}{
-        \href{https://github.com/PartlyFluked}{github.com/PartlyFluked}
+
+        % website
+    \cvpersonalinfolinewithicon{height=5mm}{website-icon.png}{
+        \href{https://luke.davis.computer}{luke.davis.computer}
     }
 }
 
@@ -302,7 +302,8 @@
         \item Designing and implementing the CI/CD iterative development system.
         \item Containerise build system to use Docker/Apptainer and write deploy scripts / bash functions to utilise this in HPC environments .
         \item Refining pipeline critical path to lower latency.
-        \item Implemented pipeline artifact analysis framework.
+        \item Implemented pipeline artifact processing framework.
+        \item Built a centralised database and performance monitoring/alert dashboard for live analysis of pipeline results.
     \end{itemize}
 }
 
@@ -337,6 +338,20 @@
     \end{itemize}
 }
 
+\cvitem{
+    \cvdurationstyle{June 2013 -- Jan 2018}
+}{
+    \cvtitle{Front-end Manager and Customer Service Representative}
+
+    Bunnings Warehouse
+
+    \begin{itemize}[leftmargin=*]
+        \item Maintained friendly service in a fast-paced environment at the returns desk.
+        \item Oversaw and mentored the customer service team.
+        \item Managed breaks and procured replacement staff.
+    \end{itemize}
+}
+
 % skills
 % ------
 
@@ -348,7 +363,7 @@
 \cvitem{
     \cvheadingstyle{Fields}
 }{
-    Systems Administration, Cloud Computing, Database Design and Management, Parallel Computing, DevOps Automation, Computer Vision, Machine Learning.
+    Systems Administration, DevOps Automation, Database Design and Management, Cloud Computing, Computer Vision, Machine Learning, High-Performance Computing, Parallel Computing.
 }
 
 \cvitem{
@@ -360,13 +375,13 @@
 \cvitem{
     \cvheadingstyle{Frameworks and Libraries}
 }{
-    Pytorch, Node.js, Redis, Gstreamer, Flask, FastAPI, Vue.js, Slurm, HTCondor, Ruby on Rails, WinAPI.
+    Pytorch, Node.js, Redis, Gstreamer, Flask, FastAPI, Vue.js, Ruby on Rails, WinAPI.
 }
 
 \cvitem{
     \cvheadingstyle{Developer Tools}
 }{
-    Linux, git, Docker/Apptainer, Kubernetes, Jupyter, VSCode, geth, GitlabCI/Jenkins, Systemd, WSL.
+    Linux, git, Docker/Apptainer, Kubernetes, Jupyter, VSCode, PostgreSQL, Slurm, HTCondor, Grafana/Prometheus, GitlabCI/Jenkins, geth, Systemd, WSL.
 }
 
 \cvitem{
